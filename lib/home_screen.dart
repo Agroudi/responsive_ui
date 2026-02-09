@@ -37,7 +37,6 @@ class SignSightHome extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
 
-                    // ===== Title =====
                     const Text(
                       "SignSight",
                       style: TextStyle(
@@ -64,7 +63,6 @@ class SignSightHome extends StatelessWidget {
 
                     const SizedBox(height: 32),
 
-                    // Feature Cards
                     Wrap(
                       spacing: 20,
                       runSpacing: 20,
@@ -130,8 +128,6 @@ class SignSightHome extends StatelessWidget {
         },
       ),
 
-
-      // ===== Bottom Navigation =====
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: primaryColor,
         items: const [
@@ -143,7 +139,6 @@ class SignSightHome extends StatelessWidget {
     );
   }
 
-  // ===== Primary Button =====
   static Widget _primaryButton(String text) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
@@ -211,7 +206,6 @@ class SignSightHome extends StatelessWidget {
     );
   }
 
-  // ===== How It Works =====
   static Widget _howItWorksCard() {
     return Container(
       width: double.infinity,
